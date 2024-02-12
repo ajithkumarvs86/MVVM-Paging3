@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/lytContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/border_card"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="@dimen/dimen_10dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgUser"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtFullName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Full Name"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txtEmail"
+        app:layout_constraintStart_toEndOf="@+id/imgUser" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtEmail"
+        android:layout_width="0dp"
+        android:text="Email"
+        android:drawableStart="@drawable/ic_email"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/dimen_5dp"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgArrow"
+        app:layout_constraintBottom_toTopOf="@+id/txtMobile"
+        app:layout_constraintTop_toBottomOf="@+id/txtFullName"
+        app:layout_constraintStart_toEndOf="@+id/imgUser" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtMobile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_call"
+        android:drawablePadding="@dimen/dimen_5dp"
+        android:gravity="center_vertical"
+        android:text="Mobile"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:textColor="@color/cardview_dark_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgUser"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtUniversity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/dimen_5dp"
+        android:gravity="center_vertical"
+        android:text="University"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:textColor="@color/cardview_dark_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgUser"
+        app:layout_constraintTop_toBottomOf="@+id/txtMobile" />
+
+    <ImageView
+        android:id="@+id/imgArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AK Paging3</string>
+    <string name="no_data_found_n_nswipe_to_refresh">Something Went Wrong!\n\n<b>Click to Refresh</b></string>
+    <string name="name">Name:</string>
+    <string name="role">Title:</string>
+    <string name="department">Department:</string>
+    <string name="address">Address:</string>
+    <string name="company">Company</string>
+    <string name="personal_details">Personal Details</string>
+</resources>
